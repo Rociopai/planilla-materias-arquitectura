@@ -1,51 +1,54 @@
 body {
   font-family: sans-serif;
-  background-color: #f8f4fc;
-  color: #333;
-  margin: 0;
-  padding: 20px;
+  background-color: #f8f0fc;
+  color: #4b0082;
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
-  color: #7e57c2;
-  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
-.año-container {
-  margin-bottom: 40px;
+#malla {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 40px auto;
+  max-width: 1600px;
 }
 
-.año-container h2 {
-  color: #5e35b1;
-  margin-left: 10px;
+.columna {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 14%;
 }
 
-.malla {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 15px;
+.columna h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #b57edc;
 }
 
-.card {
-  background-color: white;
-  border: 2px solid #7e57c2;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  transition: background 0.3s, opacity 0.3s;
+.materia {
+  padding: 8px;
+  border: 2px solid #a471b1;
+  border-radius: 8px;
+  background-color: #e9d6f7;
   cursor: pointer;
   user-select: none;
+  transition: background-color 0.3s;
 }
 
-.card.aprobada {
-  background-color: #d1c4e9;
-  border-color: #5e35b1;
-}
-
-.card.desactivada {
-  opacity: 0.4;
+.materia.bloqueada {
+  background-color: #d3c6dd;
+  opacity: 0.6;
   cursor: not-allowed;
+}
+
+.materia.aprobada {
+  background-color: #c8e6c9;
+  border-color: #388e3c;
+  color: #2e7d32;
 }
 
