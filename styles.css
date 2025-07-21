@@ -9,13 +9,23 @@ body {
 h1 {
   text-align: center;
   color: #7e57c2;
+  margin-bottom: 30px;
 }
 
-#malla {
+.año-container {
+  margin-bottom: 40px;
+}
+
+.año-container h2 {
+  color: #5e35b1;
+  margin-left: 10px;
+}
+
+.malla {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .card {
@@ -38,3 +48,4 @@ h1 {
   opacity: 0.4;
   cursor: not-allowed;
 }
+
